@@ -118,7 +118,7 @@ public class ArrayLists {
         return false;
     }
     // assignment 
-    // 1. is monotone 
+    // 1. is monotone O(n)
     public static boolean isMonotonic(ArrayList<Integer> list) {
         if(list.get(0) > list.get(1)) {
             for(int i=1; i<list.size()-1; i++) {
@@ -135,7 +135,7 @@ public class ArrayLists {
         }
         return true;
     }
-    //2. Lonely numbers
+    //2. Lonely numbers T.C. -> O(nlogn)
     public static ArrayList<Integer> lonelynums(ArrayList<Integer> nums) {
         Collections.sort(nums);
         ArrayList<Integer> sol = new ArrayList<>();
